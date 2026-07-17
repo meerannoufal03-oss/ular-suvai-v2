@@ -59,7 +59,7 @@ header{
 .logo{
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:40px;
 }
 
 .logo img{
@@ -124,12 +124,16 @@ header{
 .hero{
     width:100%;
     height:100vh;
-    background:url("images/background.jpg.jpeg") center center/cover no-repeat;
-    position:relative;
-    display:flex;
+    background:url("images/background.jpg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
     align-items:center;
     justify-content:center;
     text-align:center;
+    overflow: hidden;
 }
 
 .overlay{
@@ -183,15 +187,6 @@ header{
     transform:translateY(-3px);
 }
 
-.secondary-btn{
-    border:2px solid #d4af37;
-    color:#fff;
-}
-
-.secondary-btn:hover{
-    background:#e6b514ff;
-    color:#111;
-}
 
 /* ===========================
     SECTION TITLE
@@ -263,7 +258,7 @@ header{
 
     font-family:'Cinzel',serif;
 
-    font-size:52px;
+    font-size:30px;
 
     color:#d4af37;
 
@@ -769,8 +764,15 @@ header{
 }
 
 .logo img{
-    width:45px;
-    height:45px;
+     display: block;
+
+    width:170px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:50%;
 }
 
 .nav-links{
@@ -793,8 +795,9 @@ header{
 }
 
 .hero{
-    height:90vh;
-    padding:20px;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
 }
 
 .hero-content h1{
@@ -930,8 +933,17 @@ header{
 
 @media (max-width:768px){
 
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}    
+
 .menu-btn{
     display:block;
+    margin-left: auto;
 }
 
 .nav-links{
