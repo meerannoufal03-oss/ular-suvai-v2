@@ -43,7 +43,7 @@ header{
     left:0;
     width:100%;
     z-index:999;
-    background:#0b0b0b;
+    background:black;
     backdrop-filter:blur(10px);
 }
 
