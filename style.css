@@ -795,20 +795,25 @@ header{
 }
 
 .hero{
+    height: 75vh;
     min-height: 75vh;
-    padding: 100px 20px 40px;
-    background-size: cover;
-    background-position: center;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    margin-top: 30px;
+
 }
 
 .hero-content h1{
-    font-size:36px;
-    line-height: 1.2;
+    font: size 34px;
 }
 
 .hero-content p{
-    font-size:17px;
-    line-height: 1.7;
+    font-size:16px;
 }
 
 .hero-buttons{
