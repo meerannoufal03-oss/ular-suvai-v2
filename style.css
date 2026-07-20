@@ -59,7 +59,7 @@ header{
 .logo{
     display:flex;
     align-items:center;
-    gap:40px;
+    gap: 15px;
 }
 
 .logo img{
@@ -76,6 +76,7 @@ header{
 
 .logo h2{
     color:#d4af37;
+    margin: 0;
     font-size:24px;
     font-weight:700;
 }
@@ -759,12 +760,16 @@ header{
     flex-wrap:wrap;
 }
 
+.logo{
+    gap: 12px;
+}
+
 .logo h2{
     font-size:20px;
 }
 
 .logo img{
-     display: block;
+    display: block;
 
     width:170px;
 
