@@ -1057,9 +1057,15 @@ button {
 
     .hero {
 
-        min-height: 85vh;
+        min-height: 560px;
+        
+        height: 560px;
 
-        padding: 60px 6%;
+        padding: 45px 24px;
+
+        display: flex;
+
+        align-items: center;
 
         background-position: center;
     }
@@ -1073,26 +1079,32 @@ button {
     .hero-small-title {
         font-size: 11px;
 
-        letter-spacing: 2px;
+        letter-spacing: 1.8px;
+
+        margin-bottom: 14px;
     }
 
 
     .hero h1 {
-        font-size: 42px;
+        font-size: 36px;
 
         line-height: 1.15;
+
+        margin-bottom: 20px;
     }
 
 
     .hero-description {
-        font-size: 15px;
+        font-size: 14px;
 
-        line-height: 1.7;
+        line-height: 1.65;
+
+        margin-bottom: 26px;
     }
 
 
     .hero-button {
-        padding: 13px 23px;
+        padding: 12px 22px;
 
         font-size: 14px;
     }
@@ -1121,134 +1133,103 @@ button {
        PRODUCTS
     ==================================== */
 
+    @media (max-width: 480px) {
+
     .products-section {
-        padding-top: 75px;
-        padding-bottom: 70px;
+        padding: 45px 16px 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-heading p {
+        font-size: 13px;
     }
 
 
-    .category-products-section {
-        padding-top: 10px;
-        padding-bottom: 70px;
-    }
-
-
-    /* CATEGORY CARDS */
+    /* CATEGORY */
 
     .category-container {
-        grid-template-columns: 1fr;
-
-        gap: 22px;
+        gap: 14px;
     }
-
-
-    .category-card {
-
-        grid-template-columns: 1fr;
-
-        min-height: auto;
-    }
-
 
     .category-image {
-
-        height: 220px;
+        height: 150px;
     }
-
 
     .category-content {
-
-        padding: 25px;
+        padding: 16px 18px;
     }
-
 
     .category-content h3 {
+        font-size: 20px;
+    }
 
-        font-size: 23px;
+    .category-content p {
+        font-size: 12px;
+        margin-bottom: 12px;
     }
 
 
-    /* PRODUCT GRID */
+    /* PRODUCTS */
 
-    .product-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 22px;
+    .category-products-section {
+        padding-left: 16px;
+        padding-right: 16px;
     }
-
-
-    .product-category {
-
-        margin-bottom: 75px;
-    }
-
-
-    .category-title {
-
-        margin-bottom: 35px;
-    }
-
-
-    .category-title h2 {
-
-        font-size: 32px;
-    }
-
 
     .product-image {
-
-        height: 240px;
+        height: 165px;
     }
 
-
-    /* ====================================
-       ABOUT
-    ==================================== */
-
-    .about-section {
-
-        padding: 75px 6%;
+    .product-info {
+        padding: 15px 17px;
     }
 
-
-    .about-content h2 {
-
-        font-size: 34px;
+    .product-info h3 {
+        font-size: 18px;
     }
 
+    .product-info p {
+        font-size: 12px;
+    }
 
-    .about-content p:not(.section-small-title) {
-
+    .product-price {
         font-size: 15px;
-
-        line-height: 1.8;
     }
 
 
-    /* ====================================
-       CONTACT
-    ==================================== */
+    /* CONTACT */
 
     .contact-section {
-
-        padding: 75px 6%;
+        padding: 45px 16px;
     }
-
 
     .contact-container {
-
-        grid-template-columns: 1fr;
-
-        gap: 16px;
+        gap: 12px;
     }
-
 
     .contact-card {
-
-        padding: 25px 18px;
+        padding: 18px 12px;
     }
 
+    .contact-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .contact-card h3 {
+        font-size: 17px;
+    }
+
+    .contact-card a,
+    .contact-card p {
+        font-size: 12px;
+    }
+
+}
 
     /* ====================================
        FOOTER
@@ -1304,56 +1285,102 @@ button {
 
     .hero {
 
-        min-height: 80vh;
+        min-height: 520px;
 
-        padding: 50px 20px;
+        height: 520px;
+
+        padding: 40px 20px;
     }
 
 
     .hero h1 {
 
-        font-size: 36px;
+        font-size: 32px;
+
+        line-height: 1.15;
     }
 
 
     .hero-description {
 
         font-size: 14px;
+        line-height: 1.6;
+
+    }
+
+    .hero-button{
+
+        padding: 12px 20px;
+    }
+
+
+    @media (max-width: 480px) {
+
+    .products-section {
+        padding: 45px 16px 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-heading p {
+        font-size: 13px;
+    }
+
+
+    /* CATEGORY */
+
+    .category-container {
+        gap: 14px;
+    }
+
+    .category-image {
+        height: 150px;
+    }
+
+    .category-content {
+        padding: 16px 18px;
+    }
+
+    .category-content h3 {
+        font-size: 20px;
+    }
+
+    .category-content p {
+        font-size: 12px;
+        margin-bottom: 12px;
     }
 
 
     /* PRODUCTS */
 
-    .products-section,
     .category-products-section {
-
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-
-
-    .category-content {
-
-        padding: 22px;
-    }
-
-
-    .category-image {
-
-        height: 200px;
-    }
-
 
     .product-image {
-
-        height: 220px;
+        height: 165px;
     }
-
 
     .product-info {
-
-        padding: 19px;
+        padding: 15px 17px;
     }
+
+    .product-info h3 {
+        font-size: 18px;
+    }
+
+    .product-info p {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 15px;
+    }
+
+}
 
 
     /* ABOUT */
@@ -1368,9 +1395,30 @@ button {
     /* CONTACT */
 
     .contact-section {
+        padding: 45px 16px;
+    }
 
-        padding-left: 20px;
-        padding-right: 20px;
+    .contact-container {
+        gap: 12px;
+    }
+
+    .contact-card {
+        padding: 18px 12px;
+    }
+
+    .contact-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .contact-card h3 {
+        font-size: 17px;
+    }
+
+    .contact-card a,
+    .contact-card p {
+        font-size: 12px;
     }
 
 
