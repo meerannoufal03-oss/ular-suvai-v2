@@ -1,570 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ular Suvai</title>
+    <title>Ular Suvai | Traditional South Indian Foods</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 </head>
 
 <body>
 
-<!-- ===========================
-        NAVBAR START
-============================ -->
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-<header>
+    <header class="navbar">
 
-<nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png.jpeg" alt="Ular Suvai Logo">
+        </div>
 
-<div class="logo">
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-<img src="images/logo.jpg.jpg" alt="Ular Suvai Logo">
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
 
-<h2>Ular Suvai</h2>
+    </header>
 
-</div>
 
-<ul class="nav-links">
+    <!-- =========================
+         HOME / HERO SECTION
+    ========================== -->
 
-<li><a href="#">Home</a></li>
+    <section class="hero" id="home">
 
-<li><a href="#products">Products</a></li>
+        <div class="hero-content">
 
-<li><a href="#about">About</a></li>
+            <p class="hero-small-title">
+                AUTHENTIC TAMIL HOMEMADE TASTE
+            </p>
 
-<li><a href="#contact">Contact</a></li>
+            <h1>
+                Traditional Taste,<br>
+                Preserved With Love.
+            </h1>
 
-</ul>
+            <p class="hero-description">
+                Discover authentic South Indian traditional foods,
+                carefully prepared and preserved to bring the
+                original taste to your family table.
+            </p>
 
-<div class="menu-btn">
-
-<i class="fa-solid fa-bars"></i>
-
-</div>
-
-</nav>
-
-</header>
-
-<!-- ===========================
-        HERO SECTION
-============================ -->
-
-<section class="hero">
-
-<div class="overlay"></div>
-
-<div class="hero-content">
-
-<h1>
-Traditional Taste,<br>
-Premium Quality
-</h1>
-
-<p>
-
-Authentic Pickles, Karuvadu, Uppukandam,
-Karuppatti & Palm Products made with
-traditional recipes and delivered fresh
-across Tamil Nadu.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="https://wa.me/91XXXXXXXXXX" class="primary-btn">
-Order Now
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Products Section starts below -->
-
-<!-- ===========================
-        OUR PRODUCTS
-============================ -->
-
-<section id="products" class="products-section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <span class="product-tag">
-                Special Collection
-            </span>
-
-            <h1>Premium Traditional Products</h1>
-
+            <a href="#products" class="hero-button">
+                Explore Products
+            </a>
 
         </div>
 
-        <div class="category-grid">
+    </section>
 
-            <!-- PICKLES -->
 
-            <details class="category-card" open>
+    <!-- =========================
+         PRODUCTS SECTION
+    ========================== -->
 
-                <summary>
+    <section class="products-section" id="products">
 
-                    <img src="images/pickels-oorugai.jpg.jpeg" alt="Pickles">
+        <div class="section-heading">
 
-                    <div class="category-info">
+            <p class="section-small-title">
+                OUR COLLECTION
+            </p>
 
-                        <h3>🥘 Pickles / Oorugai</h3>
+            <h2>
+                Explore Our Products
+            </h2>
 
-                        <p>
-                            Traditional Homemade Pickles with Authentic Taste
-                        </p>
+            <p>
+                Choose a category to discover our traditional
+                homemade products.
+            </p>
 
-                    </div>
+        </div>
 
-                    <i class="fa-solid fa-chevron-down"></i>
 
-                </summary>
+        <!-- PRODUCT CATEGORIES WILL COME HERE -->
 
-                <div class="product-list">
+        <!-- =========================
+             PRODUCT CATEGORY CARDS
+        ========================== -->
 
-                    <div class="product-item">
+        <div class="category-container">
 
-                        <img src="images/chicken-pickle.jpg.jpeg" alt="Chicken Pickle">
 
-                        <h4>Chicken Pickle</h4>
+            <!-- KARUVADU -->
 
-                        <span>Premium Homemade</span>
+            <div class="category-card">
 
-                    </div>
+                <div class="category-image">
+                    <img src="images/karuvaadu.jpg.jpeg"
+                         alt="Karuvadu">
+                </div>
 
-                    <div class="product-item">
+                <div class="category-content">
 
-                        <img src="images/mutton-pickle.jpg.jpeg" alt="Mutton Pickle">
+                    <h3>Karuvadu</h3>
 
-                        <h4>Mutton Pickle</h4>
+                    <p>
+                        Traditional dried fish varieties
+                        with authentic coastal taste.
+                    </p>
 
-                        <span>Premium Homemade</span>
+                    <button class="category-button"
+                            onclick="openCategory('karuvadu')">
 
-                    </div>
+                        View Products
 
-                    <div class="product-item">
+                        <span class="arrow">
+                            →
+                        </span>
 
-                        <img src="images/beef-pickle.jpg.jpeg" alt="Beef Pickle">
-
-                        <h4>Beef Pickle</h4>
-
-                        <span>Premium Homemade</span>
-
-                    </div>
-
-                    <div class="product-item">
-
-                        <img src="images/fish-pickle.jpg.jpeg" alt="Fish Pickle">
-
-                        <h4>Fish Pickle</h4>
-
-                        <span>Premium Homemade</span>
-
-                    </div>
-
-                    <div class="product-item">
-
-                        <img src="images/prawn-pickle.jpg.jpeg" alt="Prawn Pickle">
-
-                        <h4>Prawn Pickle</h4>
-
-                        <span>Premium Homemade</span>
-
-                    </div>
-
-                    <div class="product-item">
-
-                        <img src="images/squid-pickle.jpg.jpeg" alt="Squid Pickle">
-
-                        <h4>Squid Pickle</h4>
-
-                        <span>Premium Homemade</span>
-
-                    </div>
+                    </button>
 
                 </div>
 
-            </details>
+            </div>
+
 
             <!-- UPPUKANDAM -->
 
-            <details class="category-card">
+            <div class="category-card">
 
-                <summary>
+                <div class="category-image">
+                    <img src="images/uppukandam.jpg.jpg"
+                         alt="Uppukandam">
+                </div>
 
-                    <img src="images/uppukandam.jpg.jpg" alt="Uppukandam">
+                <div class="category-content">
 
-                    <div class="category-info">
+                    <h3>Uppukandam</h3>
 
-                        <h3>🥩 Uppukandam</h3>
+                    <p>
+                        Traditional preserved dry meat
+                        prepared with authentic taste.
+                    </p>
 
-                        <p>Traditional Dry Meat Collection</p>
+                    <button class="category-button"
+                            onclick="openCategory('uppukandam')">
 
+                        View Products
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- OORUGAI -->
+
+            <div class="category-card">
+
+                <div class="category-image">
+                    <img src="images/pickels-oorugai.jpg.jpeg"
+                         alt="Oorugai">
+                </div>
+
+                <div class="category-content">
+
+                    <h3>Oorugai</h3>
+
+                    <p>
+                        Authentic homemade pickles made
+                        with traditional flavours.
+                    </p>
+
+                    <button class="category-button"
+                            onclick="openCategory('oorugai')">
+
+                        View Products
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- KARUPPATTI -->
+
+            <div class="category-card">
+
+                <div class="category-image">
+                    <img src="images/panai-products.jpg.jpeg"
+                         alt="Karuppatti">
+                </div>
+
+                <div class="category-content">
+
+                    <h3>Karuppatti</h3>
+
+                    <p>
+                        Traditional palm products and
+                        naturally prepared sweeteners.
+                    </p>
+
+                    <button class="category-button"
+                            onclick="openCategory('karuppatti')">
+
+                        View Products
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         CATEGORY PRODUCTS
+    ========================== -->
+
+    <section class="category-products-section">
+
+
+        <!-- =========================
+             KARUVADU PRODUCTS
+        ========================== -->
+
+        <div class="product-category" id="karuvadu">
+
+            <div class="category-title">
+
+                <p class="section-small-title">
+                    TRADITIONAL DRY FISH
+                </p>
+
+                <h2>Karuvadu</h2>
+
+                <p>
+                    Authentic traditional dried fish varieties
+                    prepared with care and rich coastal flavour.
+                </p>
+
+            </div>
+
+
+            <div class="product-grid">
+
+
+                <!-- Product 1 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="images/karuvadu.jpg.jpeg"
+                             alt="Karuvadu">
                     </div>
 
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="product-info">
 
-                </summary>
+                        <h3>Karuvadu</h3>
 
-                <div class="product-list">
+                        <p>
+                            Traditional dried fish.
+                        </p>
 
-                    <div class="product-item">
-
-                        <img src="images/mutton-uppukandam.jpg.jpeg" alt="Mutton Uppukandam">
-
-                        <h4>Mutton Uppukandam</h4>
-
-                        <span>Premium Quality</span>
-
-                    </div>
-
-                    <div class="product-item">
-
-                        <img src="images/beef-uppukandam.jpg.jpeg" alt="Beef Uppukandam">
-
-                        <h4>Beef Uppukandam</h4>
-
-                        <span>Premium Quality</span>
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
 
                     </div>
 
                 </div>
 
-            </details>
 
-        <!-- KARUVADU -->
+                <!-- Product 2 -->
 
-            <details class="category-card">
+                <div class="product-card">
 
-                <summary>
+                    <div class="product-image">
+                        <img src="images/karuvadu.jpg.jpeg"
+                             alt="Dried Fish">
+                    </div>
 
-                    <img src="images/karuvaadu.jpg.jpeg" alt="Karuvadu">
+                    <div class="product-info">
 
-                    <div class="category-info">
+                        <h3>Dried Fish</h3>
 
-                        <h3>🐟 Karuvadu / Dry Fish</h3>
+                        <p>
+                            Traditional dried seafood.
+                        </p>
 
-                        <p>Fresh Traditional Dry Fish Collection</p>
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
 
                     </div>
 
-                     <i class="fa-solid fa-chevron-down"></i>
+                </div>
 
-                </summary>
-
-                    <div class="product-list">
-
-                        <div class="product-item">
-
-                            <img src="images/karuvadu.jpg.jpeg" alt="Karuvadu">
-
-                                <h4>All Types of Dry Fish</h4>
-
-                                <span>Fresh & Hygienically Packed</span>
-
-                        </div>
-
-                    </div>
-
-            </details>
-
-    <!-- PANAI PRODUCTS -->
-
-    <details class="category-card">
-
-        <summary>
-
-            <img src="images/panai-products.jpg.jpeg" alt="Panai Products">
-
-            <div class="category-info">
-
-                <h3>🌴 Panai Products</h3>
-
-                <p>Healthy Traditional Palm Products</p>
-
-            </div>
-
-            <i class="fa-solid fa-chevron-down"></i>
-
-        </summary>
-
-        <div class="product-list">
-
-            <div class="product-item">
-
-                <img src="images/karuppatti.jpg.jpeg" alt="Karuppatti">
-
-                <h4>Karuppatti</h4>
-
-                <span>Natural Palm Jaggery</span>
-
-            </div>
-
-            <div class="product-item">
-
-                <img src="images/panangarkandu.jpg.jpeg" alt="Panangarkandu">
-
-                <h4>Panangarkandu</h4>
-
-                <span>Natural Palm Candy</span>
 
             </div>
 
         </div>
 
-    </details>
 
-</div>
 
-</section>
+        <!-- =========================
+             UPPUKANDAM PRODUCTS
+        ========================== -->
 
-<!-- About Section Starts Below -->
+        <div class="product-category" id="uppukandam">
 
-<!-- ===========================
-        ABOUT SECTION
-============================ -->
+            <div class="category-title">
 
-<section class="about" id="about">
+                <p class="section-small-title">
+                    TRADITIONAL DRY MEAT
+                </p>
 
-<div class="about-container">
+                <h2>Uppukandam</h2>
 
-<div class="about-image">
+                <p>
+                    Traditional preserved dry meat with
+                    authentic homemade flavour.
+                </p>
 
-<img src="images/logo.jpg.jpg" alt="About Ular Suvai">
+            </div>
 
-</div>
 
-<div class="about-content">
+            <div class="product-grid">
 
-<h2>About Ular Suvai</h2>
 
-<p>
+                <!-- Mutton Uppukandam -->
 
-Ular Suvai brings you authentic traditional foods
-prepared with love and age-old recipes.
-From delicious homemade pickles to premium dry fish,
-uppukandam, karuppatti and palm products,
-every item is carefully selected to deliver
-the true taste of our heritage.
+                <div class="product-card">
 
-</p>
+                    <div class="product-image">
+                        <img src="images/mutton-uppukandam.jpg.jpeg"
+                             alt="Mutton Uppukandam">
+                    </div>
 
-<a href="#products" class="primary-btn">
-Explore Products
-</a>
+                    <div class="product-info">
 
-</div>
+                        <h3>Mutton Uppukandam</h3>
 
-</div>
+                        <p>
+                            Traditional preserved mutton.
+                        </p>
 
-</section>
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
 
-<!-- ===========================
-        CONTACT SECTION
-============================ -->
+                    </div>
 
-<section class="contact" id="contact">
+                </div>
 
-<div class="section-title">
 
-<h2>Contact Us</h2>
+                <!-- Beef Uppukandam -->
 
-<p>
-Feel Free to Contact Us Anytime
-</p>
+                <div class="product-card">
 
-</div>
+                    <div class="product-image">
+                        <img src="images/beef-uppukandam.jpg.jpeg"
+                             alt="Beef Uppukandam">
+                    </div>
 
-<div class="contact-container">
+                    <div class="product-info">
 
-<div class="contact-card">
+                        <h3>Beef Uppukandam</h3>
 
-<i class="fa-solid fa-phone"></i>
+                        <p>
+                            Traditional preserved beef.
+                        </p>
 
-<h3>Phone</h3>
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
 
-<p>+91 98765 43210</p>
+                    </div>
 
-</div>
+                </div>
 
-<div class="contact-card">
 
-<i class="fa-brands fa-whatsapp"></i>
+            </div>
 
-<h3>WhatsApp</h3>
+        </div>
 
-<p>+91 98765 43210</p>
 
-</div>
 
-<div class="contact-card">
+        <!-- =========================
+             OORUGAI PRODUCTS
+        ========================== -->
 
-<i class="fa-solid fa-envelope"></i>
+        <div class="product-category" id="oorugai">
 
-<h3>Email</h3>
+            <div class="category-title">
 
-<p>info@ularsuvai.com</p>
+                <p class="section-small-title">
+                    AUTHENTIC HOMEMADE PICKLES
+                </p>
 
-</div>
+                <h2>Oorugai</h2>
 
-<div class="contact-card">
+                <p>
+                    Traditional homemade pickles prepared
+                    with authentic South Indian flavours.
+                </p>
 
-<i class="fa-solid fa-location-dot"></i>
+            </div>
 
-<h3>Address</h3>
 
-<p>
+            <div class="product-grid">
 
-No. 25,<br>
 
-Main Road,<br>
+                <!-- Chicken Oorugai -->
 
-Chennai - 600001,<br>
+                <div class="product-card">
 
-Tamil Nadu.
+                    <div class="product-image">
+                        <img src="images/chicken-pickle.jpg.jpeg"
+                             alt="Chicken Oorugai">
+                    </div>
 
-</p>
+                    <div class="product-info">
 
-</div>
+                        <h3>Chicken Oorugai</h3>
 
-</div>
+                        <p>
+                            Spicy traditional chicken pickle.
+                        </p>
 
-</section>
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
 
-<!-- Footer Starts Below -->
+                    </div>
 
-<!-- ===========================
-        FOOTER SECTION
-============================ -->
+                </div>
 
-<footer class="footer">
 
-<div class="footer-container">
+                <!-- Mutton Oorugai -->
 
-<!-- Footer Logo -->
+                <div class="product-card">
 
-<div class="footer-box">
+                    <div class="product-image">
+                        <img src="images/mutton-pickle.jpg.jpeg"
+                             alt="Mutton Oorugai">
+                    </div>
 
-<h3>Ular Suvai</h3>
+                    <div class="product-info">
 
-<p>
-Traditional Homemade Foods with
-Authentic Taste & Premium Quality.
-</p>
+                        <h3>Mutton Oorugai</h3>
 
-</div>
+                        <p>
+                            Authentic mutton pickle.
+                        </p>
 
-<!-- Contact Info -->
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
 
-<div class="footer-box">
+                    </div>
 
-<h3>Contact</h3>
+                </div>
 
-<p>
-<i class="fa-solid fa-phone"></i>
-+91 98765 43210
-</p>
 
-<p>
-<i class="fa-brands fa-whatsapp"></i>
-+91 98765 43210
-</p>
+                <!-- Beef Oorugai -->
 
-<p>
-<i class="fa-solid fa-envelope"></i>
-info@ularsuvai.com
-</p>
+                <div class="product-card">
 
-<p>
-<i class="fa-solid fa-location-dot"></i>
-Chennai, Tamil Nadu
-</p>
+                    <div class="product-image">
+                        <img src="images/beef-pickle.jpg.jpeg"
+                             alt="Beef Oorugai">
+                    </div>
 
-</div>
+                    <div class="product-info">
 
-<!-- Quick Links -->
+                        <h3>Beef Oorugai</h3>
 
-<div class="footer-box">
+                        <p>
+                            Traditional beef pickle.
+                        </p>
 
-<h3>Quick Links</h3>
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
 
-<ul>
+                    </div>
 
-<li><a href="#">Home</a></li>
+                </div>
 
-<li><a href="#products">Products</a></li>
 
-<li><a href="#about">About</a></li>
+                <!-- Prawn Oorugai -->
 
-<li><a href="#contact">Contact</a></li>
+                <div class="product-card">
 
-</ul>
+                    <div class="product-image">
+                        <img src="images/prawn-pickle.jpg.jpeg"
+                             alt="Prawn Oorugai">
+                    </div>
 
-</div>
+                    <div class="product-info">
 
-<!-- Social Media -->
+                        <h3>Prawn Oorugai</h3>
 
-<div class="footer-box">
+                        <p>
+                            Authentic prawn pickle.
+                        </p>
 
-<h3>Follow Us</h3>
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
 
-<div class="social-icons">
+                    </div>
 
-<a href="https://instagram.com" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
+                </div>
 
-<a href="https://facebook.com" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
 
-<a href="https://youtube.com" target="_blank">
-<i class="fab fa-youtube"></i>
-</a>
+                <!-- Squid Oorugai -->
 
-</div>
+                <div class="product-card">
 
-</div>
+                    <div class="product-image">
+                        <img src="images/squid-pickle.jpg.jpeg"
+                             alt="Squid Oorugai">
+                    </div>
 
-</div>
+                    <div class="product-info">
 
-<hr>
+                        <h3>Squid Oorugai</h3>
 
-<div class="copyright">
+                        <p>
+                            Traditional squid pickle.
+                        </p>
 
-<p>
-© 2026 <strong>Ular Suvai</strong>. All Rights Reserved.
-</p>
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
 
-</div>
+                    </div>
 
-</footer>
+                </div>
 
-<script src="script.js"></script>
+
+                <!-- Fish Oorugai -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="images/fish-pickle.jpg.jpeg"
+                             alt="Fish Oorugai">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Fish Oorugai</h3>
+
+                        <p>
+                            Traditional fish pickle.
+                        </p>
+
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             KARUPPATTI PRODUCTS
+        ========================== -->
+
+        <div class="product-category" id="karuppatti">
+
+            <div class="category-title">
+
+                <p class="section-small-title">
+                    TRADITIONAL PALM PRODUCTS
+                </p>
+
+                <h2>Karuppatti</h2>
+
+                <p>
+                    Traditional palm products made with
+                    authentic natural ingredients.
+                </p>
+
+            </div>
+
+
+            <div class="product-grid">
+
+
+                <!-- Karuppatti -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="images/karuppatti.jpg.jpeg"
+                             alt="Karuppatti">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Karuppatti</h3>
+
+                        <p>
+                            Traditional palm jaggery.
+                        </p>
+
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Panangarkandu -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="images/panangarkandu.jpg.jpeg"
+                             alt="Panangarkandu">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Panangarkandu</h3>
+
+                        <p>
+                            Traditional palm candy.
+                        </p>
+
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Traditional Palm Products -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="images/panai-products.jpg.jpeg"
+                             alt="Traditional Palm Products">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Traditional Palm Products</h3>
+
+                        <p>
+                            Authentic traditional palm products.
+                        </p>
+
+                        <span class="product-price">
+                            ₹___ / kg
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-container">
+
+            <div class="about-content">
+
+                <p class="section-small-title">
+                    ABOUT ULAR SUVAI
+                </p>
+
+                <h2>
+                    Tradition In Every Taste
+                </h2>
+
+                <p>
+                    Ular Suvai brings authentic traditional
+                    South Indian foods to today's families.
+                    Our collection celebrates the rich food
+                    traditions of Tamil Nadu and the flavours
+                    passed down through generations.
+                </p>
+
+                <p>
+                    From traditional Karuvadu and Uppukandam
+                    to homemade Oorugai and natural palm
+                    products, every product is inspired by
+                    authentic homemade taste.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="section-heading">
+
+            <p class="section-small-title">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Contact Us
+            </h2>
+
+            <p>
+                Have a question about our products?
+                Contact us and we will be happy to help.
+            </p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+
+            <!-- PHONE -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <h3>Phone</h3>
+
+                <a href="tel:+919999999999">
+                    +91 99999 99999
+                </a>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    💬
+                </div>
+
+                <h3>WhatsApp</h3>
+
+                <a href="https://wa.me/919999999999"
+                   target="_blank">
+
+                    Chat With Us
+
+                </a>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    ✉️
+                </div>
+
+                <h3>Email</h3>
+
+                <a href="mailto:hello@ularsuvai.in">
+                    hello@ularsuvai.in
+                </a>
+
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <h3>Location</h3>
+
+                <p>
+                    Tamil Nadu, India
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <img src="images/logo.png.jpeg"
+                     alt="Ular Suvai Logo">
+
+                <p>
+                    Authentic traditional taste,
+                    preserved with love.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+
+                <a href="#products">Products</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <a href="#" target="_blank">
+                    Instagram
+                </a>
+
+                <a href="#" target="_blank">
+                    Facebook
+                </a>
+
+                <a href="#" target="_blank">
+                    YouTube
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Ular Suvai. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
