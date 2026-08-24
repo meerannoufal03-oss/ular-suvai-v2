@@ -88,14 +88,12 @@ button {
 /* LOGO */
 
 .logo img {
-    width: 58px;
-    height: 58px;
+    width: 90px;
+    height: 90px;
 
     object-fit: contain;
 
-    background: var(--white);
-
-    border-radius: 8px;
+    border-radius: 30px;
 }
 
 
@@ -990,8 +988,8 @@ button {
 
 
     .logo img {
-        width: 50px;
-        height: 50px;
+        width: 90px;
+        height: 90px;
     }
 
 
